@@ -8,23 +8,9 @@ namespace PrintArrayGenerics
 {
     internal class PrintArray
     {
-        public static void toPrint(int[] intArray)
+        public static void toPrint<T>(T[] intArray)
         {
-            foreach (int item in intArray)
-            {
-                Console.WriteLine(item);
-            }
-        }
-        public static void toPrint(double[] doubleArray)
-        {
-            foreach (double item in doubleArray)
-            {
-                Console.WriteLine(item);
-            }
-        }
-        public static void toPrint(char[] charArray)
-        {
-            foreach (char item in charArray)
+            foreach (T item in intArray)
             {
                 Console.WriteLine(item);
             }
